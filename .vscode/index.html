@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautyfly LA | Russian Manicures, Lashes & Brows in Glendale</title>
+  <meta
+    name="description"
+    content="Beautyfly LA is a boutique beauty studio in Glendale specializing in Russian manicures, Russian pedicures, lashes, and brows. Explore services, pricing, gallery, policies, location, and contact options."
+  />
+  <meta
+    name="keywords"
+    content="Beautyfly LA, Russian manicure Glendale, Russian pedicure Glendale, lash extensions Glendale, brow lamination Glendale, nail studio Glendale"
+  />
+  <meta name="theme-color" content="#0d100d" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  />
+
+  <style>
+    :root {
+      --bg: #0d100d;
+      --bg-soft: #131914;
+      --panel: rgba(24, 30, 25, 0.78);
+      --card-border: rgba(191, 170, 120, 0.16);
+      --text: #f2ede4;
+      --text-soft: #d4cebf;
+      --muted: #a8a18f;
+      --olive: #526247;
+      --olive-soft: #78876d;
+      --gold: #c5a66d;
+      --gold-soft: #dcc08b;
+      --ivory: #f6f1e8;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.34);
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.18);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-sm: 14px;
+      --container: 1240px;
+      --section-space: clamp(68px, 9vw, 118px);
+      --nav-height: 78px;
+      --transition: 0.35s ease;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(90, 112, 77, 0.18), transparent 28%),
+        radial-gradient(circle at 85% 8%, rgba(197, 166, 109, 0.12), transparent 20%),
+        radial-gradient(circle at 70% 70%, rgba(90, 112, 77, 0.10), transparent 24%),
+        linear-gradient(180deg, #0b0f0c 0%, #0f1410 30%, #111712 65%, #0c100d 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body.menu-open { overflow: hidden; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+
+    .container {
+      width: min(calc(100% - 24px), var(--container));
+      margin-inline: auto;
+    }
+
+    .section {
+      position: relative;
+      padding: var(--section-space) 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--gold-soft);
+      border: 1px solid rgba(197, 166, 109, 0.15);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-soft), var(--olive-soft));
+      box-shadow: 0 0 14px rgba(197, 166, 109, 0.45);
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0 0 14px;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    h1, h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 12vw, 6rem);
+      line-height: 0.94;
+    }
+
+    h2 {
+      font-size: clamp(2.1rem, 9vw, 4rem);
+      line-height: 0.98;
+    }
+
+    h3 {
+      font-size: clamp(1.12rem, 2vw, 1.5rem);
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--text-soft);
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .glass-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-xl);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(197,166,109,0.26);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      min-width: 44px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      color: #10130f;
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+      box-shadow: 0 14px 32px rgba(197, 166, 109, 0.24);
+    }
+
+    .btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.3) 40%, transparent 75%);
+      transform: translateX(-120%);
+      animation: shimmer 4.8s infinite;
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.09);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .btn-block { width: 100%; }
+
+    @keyframes shimmer {
+      100% { transform: translateX(140%); }
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1200;
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      background: rgba(9, 12, 10, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      transition: height var(--transition), background var(--transition), box-shadow var(--transition);
+    }
+
+    .site-header.scrolled {
+      height: 68px;
+      background: rgba(7, 10, 8, 0.88);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 25% 25%, rgba(134, 164, 105, 0.5), transparent 30%),
+        linear-gradient(135deg, #213022, #58714f 58%, #1b241d);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 12px 24px rgba(0, 0, 0, 0.22);
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border-radius: 50%;
+      background: linear-gradient(140deg, transparent 5%, rgba(255,255,255,0.12) 40%, transparent 75%);
+      transform: rotate(-18deg);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      font-weight: 700;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .desktop-only {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: inline-flex;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: var(--nav-height) 12px auto 12px;
+      background: rgba(15, 20, 16, 0.97);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      display: none;
+      z-index: 1100;
+    }
+
+    .mobile-menu.open { display: block; }
+
+    .mobile-menu nav {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mobile-menu a {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.03);
+      color: var(--text-soft);
+    }
+
+    .hero {
+      padding: 24px 0 40px;
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: clip;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 320px;
+      height: 320px;
+      background: rgba(84, 104, 73, 0.28);
+      top: 4%;
+      left: -90px;
+      animation: floatGlow 11s ease-in-out infinite alternate;
+    }
+
+    .hero::after {
+      width: 240px;
+      height: 240px;
+      background: rgba(197, 166, 109, 0.15);
+      bottom: 6%;
+      right: -70px;
+      animation: floatGlow 12s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes floatGlow {
+      from { transform: translateY(0px) translateX(0px) scale(1); }
+      to { transform: translateY(24px) translateX(14px) scale(1.06); }
+    }
+
+    .hero-grid,
+    .before-after-wrap,
+    .testimonials-grid,
+    .deposit-grid,
+    .about-grid,
+    .location-grid,
+    .faq-grid,
+    .contact-grid,
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    .hero-copy .eyebrow { margin-bottom: 20px; }
+
+    .hero-copy .lead {
+      font-size: 1rem;
+      max-width: 620px;
+      margin-bottom: 24px;
+      color: #ddd6c8;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 24px 0 0;
+    }
+
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--text-soft);
+      font-size: 0.92rem;
+    }
+
+    .stat-pill i { color: var(--gold-soft); }
+
+    .hero-panel-wrap {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-panel {
+      position: relative;
+      padding: 16px;
+      border-radius: 28px;
+      overflow: hidden;
+      min-height: 540px;
+      background:
+        linear-gradient(160deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)),
+        linear-gradient(180deg, rgba(42, 55, 43, 0.7), rgba(13, 17, 13, 0.85));
+      border: 1px solid rgba(197,166,109,0.14);
+      box-shadow: 0 28px 90px rgba(0,0,0,0.44);
+    }
+
+    .hero-main-image {
+      position: absolute;
+      inset: 16px 16px 166px 16px;
+      border-radius: 22px;
+      overflow: hidden;
+    }
+
+    .hero-main-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform 0.8s ease;
+    }
+
+    .hero-panel:hover .hero-main-image img {
+      transform: scale(1.06);
+    }
+
+    .hero-floating-card,
+    .hero-price-card {
+      position: absolute;
+      border-radius: 22px;
+      padding: 15px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(12, 16, 13, 0.68);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 18px 46px rgba(0,0,0,0.28);
+    }
+
+    .hero-floating-card {
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+    }
+
+    .hero-price-card {
+      right: 12px;
+      top: 16px;
+      max-width: 190px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(197,166,109,0.12);
+      color: var(--gold-soft);
+      font-size: 0.72rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .hero-price-card strong {
+      display: block;
+      font-size: 1.8rem;
+      font-family: "Cormorant Garamond", serif;
+      margin-bottom: 4px;
+    }
+
+    .hero-price-card span,
+    .hero-floating-card span {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .hero-floating-card h3 { margin-bottom: 8px; }
+    .hero-floating-card p { font-size: 0.93rem; line-height: 1.6; margin-bottom: 0; }
+
+    .services-layout,
+    .services-preview-grid,
+    .faq-list,
+    .mini-proof-list,
+    .location-features,
+    .contact-methods,
+    .footer-links,
+    .deposit-steps,
+    .service-accordion-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .services-layout,
+    .services-preview-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-preview-card,
+    .mini-proof,
+    .policy-card,
+    .location-feature,
+    .contact-method,
+    .service-accordion-item {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      transition: transform var(--transition), border-color var(--transition), background var(--transition);
+    }
+
+    .service-preview-card:hover,
+    .mini-proof:hover,
+    .policy-card:hover,
+    .location-feature:hover,
+    .contact-method:hover,
+    .service-accordion-item:hover {
+      transform: translateY(-3px);
+      border-color: rgba(197,166,109,0.25);
+      background: rgba(255,255,255,0.045);
+    }
+
+    .service-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .service-price {
+      font-size: 1.35rem;
+      font-family: "Cormorant Garamond", serif;
+      color: var(--gold-soft);
+      white-space: nowrap;
+    }
+
+    .service-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .meta-pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .service-panel,
+    .before-after-box,
+    .testimonial-card,
+    .deposit-card,
+    .about-card,
+    .location-card,
+    .faq-card,
+    .contact-card,
+    .footer-card {
+      padding: 22px;
+      border-radius: 30px;
+    }
+
+    .service-menu-trigger-wrap {
+      margin-top: 22px;
+    }
+
+    .service-menu-reveal {
+      margin-top: 24px;
+      display: none;
+    }
+
+    .service-menu-reveal.open {
+      display: block;
+    }
+
+    .service-accordion-item {
+      padding: 0;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .service-accordion-button {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      color: var(--text);
+      text-align: left;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .service-accordion-title-group {
+      display: block;
+    }
+
+    .service-accordion-kicker {
+      color: var(--gold-soft);
+      font-size: 0.76rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .service-accordion-button i {
+      color: var(--gold-soft);
+      transition: transform var(--transition);
+      flex-shrink: 0;
+    }
+
+    .service-accordion-item.active .service-accordion-button i {
+      transform: rotate(45deg);
+    }
+
+    .service-accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .service-accordion-inner {
+      padding: 0 20px 20px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .service-line {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .service-line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .service-line h4 {
+      margin: 0 0 6px;
+    }
+
+    .service-line p {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .service-line-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+      text-align: right;
+    }
+
+    .service-line-meta strong {
+      color: var(--gold-soft);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .service-line-meta span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .instagram-swiper,
+    .testimonials-swiper {
+      overflow: visible;
+    }
+
+    .insta-card {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      aspect-ratio: 0.88 / 1.02;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #171c17;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .insta-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+    }
+
+    .insta-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .insta-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .insta-card::after {
+      content: "\F437";
+      font-family: "bootstrap-icons";
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(0,0,0,0.42);
+      color: var(--ivory);
+      font-size: 0.95rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .comparison {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1.02 / 1;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #171b17;
+    }
+
+    .comparison img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .comparison .after-image {
+      position: absolute;
+      inset: 0;
+      width: 55%;
+      overflow: hidden;
+      border-right: 2px solid rgba(255,255,255,0.8);
+    }
+
+    .comparison-range {
+      width: 100%;
+      margin-top: 18px;
+      appearance: none;
+      background: transparent;
+    }
+
+    .comparison-range::-webkit-slider-runnable-track {
+      height: 6px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--gold), var(--olive-soft));
+    }
+
+    .comparison-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      margin-top: -9px;
+      border-radius: 50%;
+      background: var(--ivory);
+      border: 2px solid var(--gold);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.26);
+      cursor: pointer;
+    }
+
+    .comparison-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .testimonial-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-card::before {
+      content: "“";
+      position: absolute;
+      top: 14px;
+      right: 20px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 7rem;
+      color: rgba(197,166,109,0.12);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .stars {
+      display: flex;
+      gap: 4px;
+      color: var(--gold-soft);
+      margin-bottom: 14px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .testimonial-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d7c39a, #6c7b61);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color: #121612;
+    }
+
+    .policies-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .policy-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(197,166,109,0.12);
+      color: var(--gold-soft);
+      font-size: 1.25rem;
+      margin-bottom: 18px;
+    }
+
+    .deposit-step {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .step-number {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(197,166,109,0.14);
+      color: var(--gold-soft);
+      font-weight: 700;
+    }
+
+    .about-image-stack {
+      position: relative;
+      min-height: 430px;
+    }
+
+    .about-image-main,
+    .about-image-small {
+      position: absolute;
+      overflow: hidden;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+    }
+
+    .about-image-main {
+      inset: 0 22px 78px 0;
+    }
+
+    .about-image-small {
+      width: 172px;
+      height: 210px;
+      right: 0;
+      bottom: 0;
+    }
+
+    .about-image-main img,
+    .about-image-small img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+
+    .about-image-main:hover img,
+    .about-image-small:hover img {
+      transform: scale(1.05);
+    }
+
+    .about-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .about-list-item {
+      display: flex;
+      gap: 12px;
+      color: var(--text-soft);
+    }
+
+    .about-list-item i { color: var(--gold-soft); }
+
+    .map-wrap {
+      border-radius: 30px;
+      overflow: hidden;
+      min-height: 360px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      min-height: 360px;
+      filter: grayscale(1) invert(0.92) hue-rotate(25deg) saturate(0.6) contrast(0.95);
+    }
+
+    .location-feature,
+    .contact-method {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .location-feature i,
+    .contact-method i {
+      color: var(--gold-soft);
+      margin-top: 3px;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .location-trust-strip {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .trust-chip {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--text-soft);
+      font-size: 0.88rem;
+    }
+
+    .faq-item {
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      color: var(--text);
+      text-align: left;
+      padding: 20px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .faq-question i {
+      transition: transform var(--transition);
+      color: var(--gold-soft);
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 22px 20px;
+    }
+
+    .inquiry-form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .inquiry-form input,
+    .inquiry-form select,
+    .inquiry-form textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      color: var(--text);
+      padding: 15px 16px;
+      outline: none;
+      transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+    }
+
+    .inquiry-form input:focus,
+    .inquiry-form select:focus,
+    .inquiry-form textarea:focus {
+      border-color: rgba(197,166,109,0.34);
+      background: rgba(255,255,255,0.06);
+      box-shadow: 0 0 0 4px rgba(197,166,109,0.08);
+    }
+
+    .inquiry-form textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .site-footer {
+      padding: 0 0 calc(32px + 72px);
+    }
+
+    .footer-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-links a {
+      color: var(--text-soft);
+      transition: color var(--transition), transform var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      transform: translateX(2px);
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .floating-book-btn {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      z-index: 1250;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+      color: #10130f;
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      box-shadow: 0 18px 40px rgba(197, 166, 109, 0.32);
+      animation: pulseFloat 2.5s infinite;
+    }
+
+    @keyframes pulseFloat {
+      0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 18px 40px rgba(197, 166, 109, 0.28);
+      }
+      50% {
+        transform: translateY(-4px);
+        box-shadow: 0 22px 50px rgba(197, 166, 109, 0.38);
+      }
+    }
+
+    @media (min-width: 768px) {
+      :root {
+        --nav-height: 84px;
+      }
+
+      .container {
+        width: min(calc(100% - 32px), var(--container));
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .nav-links a {
+        position: relative;
+        color: var(--text-soft);
+        font-size: 0.95rem;
+        transition: color var(--transition);
+      }
+
+      .nav-links a:hover,
+      .nav-links a.active { color: var(--text); }
+
+      .nav-links a.active::after,
+      .nav-links a:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--gold), var(--olive-soft));
+      }
+
+      .nav-actions .desktop-only {
+        display: inline-flex;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .hero {
+        padding: 38px 0 46px;
+      }
+
+      .hero-grid,
+      .before-after-wrap,
+      .testimonials-grid,
+      .deposit-grid,
+      .about-grid,
+      .location-grid,
+      .faq-grid,
+      .contact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 26px;
+      }
+
+      .services-layout {
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 26px;
+      }
+
+      .services-preview-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .hero-panel {
+        min-height: 620px;
+        padding: 22px;
+      }
+
+      .hero-main-image {
+        inset: 22px 22px 170px 22px;
+        border-radius: 26px;
+      }
+
+      .hero-floating-card {
+        left: 14px;
+        bottom: 24px;
+        right: auto;
+        max-width: 300px;
+        padding: 18px;
+      }
+
+      .hero-price-card {
+        right: 16px;
+        top: 26px;
+        max-width: 220px;
+        padding: 18px;
+      }
+
+      .form-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .policies-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .location-trust-strip {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .about-image-stack {
+        min-height: 540px;
+      }
+
+      .about-image-main {
+        inset: 0 60px 95px 0;
+      }
+
+      .about-image-small {
+        width: 230px;
+        height: 290px;
+      }
+
+      .map-wrap,
+      .map-wrap iframe {
+        min-height: 440px;
+      }
+
+      .floating-book-btn {
+        width: 62px;
+        height: 62px;
+        right: 18px;
+        bottom: 18px;
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .hero-grid {
+        grid-template-columns: 1.02fr 0.98fr;
+        gap: 30px;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr 0.9fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 0.95fr 1.05fr;
+      }
+
+      .faq-grid,
+      .contact-grid {
+        grid-template-columns: 0.92fr 1.08fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.1fr 0.9fr 0.9fr;
+      }
+
+      .policies-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .hero-panel {
+        transform: rotateY(-4deg) rotateX(1deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Beautyfly LA home">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong>Beautyfly LA</strong>
+          <span>Luxury Nail Studio</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#location">Location</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary desktop-only">
+          <i class="bi bi-calendar2-check"></i>
+          Book Now
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Testimonials</a>
+      <a href="#about">About</a>
+      <a href="#location">Location</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact">Book Now</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-aos="fade-up" data-aos-duration="900">
+          <span class="eyebrow">Glendale • Russian Manicures • Boutique Beauty Studio</span>
+          <h1>Precision beauty,<br />finished with a quiet luxury touch.</h1>
+          <p class="lead">
+            Beautyfly LA is a refined beauty studio in Glendale specializing in Russian manicures,
+            Russian pedicures, lashes, and brows. Designed for clients who care about detail,
+            longevity, and an elevated experience from the moment they walk in.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-pill"><i class="bi bi-gem"></i>Russian manicure specialty</div>
+            <div class="stat-pill"><i class="bi bi-geo-alt"></i>3909 San Fernando Rd #102, Glendale</div>
+            <div class="stat-pill"><i class="bi bi-stars"></i>Nails, lashes & brows in one polished studio</div>
+          </div>
+        </div>
+
+        <div class="hero-panel-wrap" data-aos="fade-left" data-aos-duration="1000">
+          <div class="hero-panel glass-card" data-parallax>
+            <div class="hero-main-image">
+              <img src="images/hero-manicure.jpg" alt="Luxury manicure work from Beautyfly LA" />
+            </div>
+
+            <div class="hero-price-card">
+              <span class="hero-badge"><i class="bi bi-award"></i>Signature Focus</span>
+              <strong>Russian Manicure</strong>
+              <span>Clean cuticle work, refined shaping, glossy finish, detail-led results.</span>
+            </div>
+
+            <div class="hero-floating-card">
+              <span class="hero-badge"><i class="bi bi-flower1"></i>Boutique Experience</span>
+              <h3>Luxury that feels calm, not loud.</h3>
+              <p>
+                Olive tones, marble details, warm lighting, and intentionally precise work create
+                a studio experience that feels polished from every angle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Services</span>
+          <h2>A cleaner, more refined service presentation built for mobile browsing.</h2>
+          <p>
+            Instead of overwhelming the page with a long visible menu, Beautyfly LA highlights the most requested services first,
+            then lets clients open the complete menu only when they want more detail.
+          </p>
+        </div>
+
+        <div class="services-preview-grid" data-aos="fade-up" data-aos-delay="60">
+          <article class="service-preview-card">
+            <div class="service-top">
+              <div>
+                <h3>Russian Manicure</h3>
+                <p>Detailed prep, clean cuticle work, and an ultra-refined finish for Beautyfly’s signature look.</p>
+              </div>
+              <div class="service-price">$70+</div>
+            </div>
+            <div class="service-meta">
+              <span class="meta-pill">75–90 min</span>
+              <span class="meta-pill">Signature specialty</span>
+            </div>
+          </article>
+
+          <article class="service-preview-card">
+            <div class="service-top">
+              <div>
+                <h3>Hard Gel Manicure</h3>
+                <p>Structured strength and a polished luxury finish for clients who want durability without sacrificing elegance.</p>
+              </div>
+              <div class="service-price">$90</div>
+            </div>
+            <div class="service-meta">
+              <span class="meta-pill">90 min</span>
+              <span class="meta-pill">Longer wear</span>
+            </div>
+          </article>
+
+          <article class="service-preview-card">
+            <div class="service-top">
+              <div>
+                <h3>Volume Lash Set</h3>
+                <p>Soft drama, fuller dimension, and a smooth lash line that still feels polished and high-end.</p>
+              </div>
+              <div class="service-price">$160</div>
+            </div>
+            <div class="service-meta">
+              <span class="meta-pill">140 min</span>
+              <span class="meta-pill">Popular lash option</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="service-menu-trigger-wrap" data-aos="fade-up" data-aos-delay="100">
+          <button class="btn btn-primary" id="serviceMenuTrigger" type="button" aria-expanded="false" aria-controls="serviceMenuReveal">
+            <i class="bi bi-card-list"></i>
+            View Full Service Menu
+          </button>
+        </div>
+
+        <div class="service-menu-reveal" id="serviceMenuReveal">
+          <div class="service-accordion-list" data-aos="fade-up">
+            <div class="service-accordion-item active">
+              <button class="service-accordion-button" type="button">
+                <span class="service-accordion-title-group">
+                  <span class="service-accordion-kicker">Category</span>
+                  <strong>Nails</strong>
+                </span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="service-accordion-content" style="max-height: 1200px;">
+                <div class="service-accordion-inner">
+                  <div class="service-line">
+                    <div>
+                      <h4>Gel Manicure</h4>
+                      <p>A clean, polished gel finish for elevated everyday nails.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$80</strong>
+                      <span>75 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Hard Gel Manicure</h4>
+                      <p>Added structure and durability with a sleek, luxury finish.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$90</strong>
+                      <span>90 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Russian Manicure</h4>
+                      <p>Detailed cuticle work and exceptional finish for the most precise manicure look.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$70+</strong>
+                      <span>75–90 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Russian Pedicure</h4>
+                      <p>A detail-focused pedicure designed with the same clean finish and elevated care.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$80+</strong>
+                      <span>75 min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-accordion-item">
+              <button class="service-accordion-button" type="button">
+                <span class="service-accordion-title-group">
+                  <span class="service-accordion-kicker">Category</span>
+                  <strong>Lashes</strong>
+                </span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="service-accordion-content">
+                <div class="service-accordion-inner">
+                  <div class="service-line">
+                    <div>
+                      <h4>Classic Lash Set</h4>
+                      <p>Soft, elegant definition for a clean enhancement effect.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$140</strong>
+                      <span>120 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Hybrid Lash Set</h4>
+                      <p>A fuller finish that blends softness with more visible dimension.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$150</strong>
+                      <span>130 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Volume Lash Set</h4>
+                      <p>Soft dramatic fullness with a smooth, polished lash line.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$160</strong>
+                      <span>140 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Mega Volume Lash Set</h4>
+                      <p>Maximum softness, depth, and density for clients wanting a high-impact look.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$180</strong>
+                      <span>150 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Lash Lift / Lamination</h4>
+                      <p>Lift and tint for a bright, clean, low-maintenance eye look.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$100</strong>
+                      <span>60 min</span>
+                    </div>
+                  </div>
+
+                  <div class="service-line">
+                    <div>
+                      <h4>Lash Removal</h4>
+                      <p>Professional removal performed with care for lash health and comfort.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$20+</strong>
+                      <span>20–30 min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-accordion-item">
+              <button class="service-accordion-button" type="button">
+                <span class="service-accordion-title-group">
+                  <span class="service-accordion-kicker">Category</span>
+                  <strong>Brows</strong>
+                </span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="service-accordion-content">
+                <div class="service-accordion-inner">
+                  <div class="service-line">
+                    <div>
+                      <h4>Brow Lamination</h4>
+                      <p>Lift, shape, and polish for fuller-looking brows with a refined finish.</p>
+                    </div>
+                    <div class="service-line-meta">
+                      <strong>$100</strong>
+                      <span>60 min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-layout" style="margin-top: 18px;">
+            <aside class="service-panel glass-card">
+              <span class="eyebrow">Booking Notes</span>
+              <h3>Pricing may vary based on length, design complexity, refill timing, and correction work.</h3>
+              <p>
+                For the smoothest booking process, send a photo of your current nails or desired look when reaching out. This helps Beautyfly LA recommend the right service and timing from the start.
+              </p>
+              <p>
+                The expandable menu keeps the section visually calm while still giving clients the trust signal of a full visible menu.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Gallery</span>
+          <h2>Real work, current trends, and the visual proof clients actually trust.</h2>
+          <p>
+            Instead of splitting attention between a portfolio and Instagram, this section acts as the primary visual gallery. It feels more current, easier to maintain, and more aligned with how beauty clients browse on mobile.
+          </p>
+        </div>
+
+        <div class="swiper instagram-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-1.jpg" alt="Beautyfly LA manicure portfolio image" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-2.jpg" alt="Beautyfly LA manicure and beauty work image" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-3.jpg" alt="Beautyfly LA manicure close-up" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-4.jpg" alt="Beautyfly LA review story manicure" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-5.jpg" alt="Beautyfly LA studio and feed view" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-6.jpg" alt="Beautyfly LA studio story image" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-7.jpg" alt="Beautyfly LA rebrand story image" /></a></div>
+            <div class="swiper-slide"><a class="insta-card" href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer"><img src="images/insta-8.jpg" alt="Beautyfly LA lashes and brows pricing" /></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="transformation">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Before & After</span>
+          <h2>Interactive beauty transformations, shown with the same calm clarity as the studio itself.</h2>
+          <p>
+            Use the slider to compare a softer starting point with a finished Beautyfly LA effect. This section is ideal for future real client comparisons.
+          </p>
+        </div>
+
+        <div class="before-after-wrap">
+          <div class="before-after-box glass-card" data-aos="fade-right">
+            <div class="comparison">
+              <img src="images/before.jpg" alt="Before beauty studio image" />
+              <div class="after-image" id="afterImage">
+                <img src="images/after.jpg" alt="After beauty studio image" />
+              </div>
+            </div>
+            <input type="range" min="0" max="100" value="55" class="comparison-range" id="comparisonRange" aria-label="Before and after image comparison slider" />
+            <div class="comparison-labels"><span>Before</span><span>After</span></div>
+          </div>
+
+          <div class="about-card glass-card" data-aos="fade-left">
+            <span class="eyebrow">Why this matters</span>
+            <h3>Luxury beauty is often felt in the details clients can’t always describe — but they notice immediately.</h3>
+            <p>
+              At Beautyfly LA, transformation is less about excess and more about refinement. Clean prep, thoughtful shaping, polished symmetry, and a result that feels expensive without looking overdone.
+            </p>
+            <p>
+              This section can later be updated with real manicure growth-out comparisons, lash set transformations, or brow lamination before-and-after photography for even stronger conversion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Luxury is confirmed in the details — and in what clients say after.</h2>
+          <p>Thoughtful service, precision work, and a studio atmosphere that feels elevated from the moment you arrive.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="glass-card testimonial-card" data-aos="fade-up">
+            <div class="swiper testimonials-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p>I’m extremely selective about nails, and this studio truly understands detail. My manicure looked clean, elegant, and expensive without feeling overdone. The shaping and cuticle work were beautiful.</p>
+                  <div class="testimonial-author"><div class="testimonial-avatar">A</div><div><strong>Alina P.</strong><p>Russian manicure client</p></div></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p>The salon is gorgeous in person and the work matches the atmosphere. Everything feels intentional, polished, and high-end. I left feeling like every detail had been taken seriously.</p>
+                  <div class="testimonial-author"><div class="testimonial-avatar">M</div><div><strong>Mila R.</strong><p>Beautyfly LA client</p></div></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p>My lashes came out soft and full exactly the way I wanted. It didn’t feel rushed at all, and the final look was clean, flattering, and beautifully done.</p>
+                  <div class="testimonial-author"><div class="testimonial-avatar">S</div><div><strong>Sofia K.</strong><p>Lash client</p></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-proof-list" data-aos="fade-up" data-aos-delay="120">
+            <div class="mini-proof"><h3>What clients notice most</h3><p>Precision, cleanliness, intentional shaping, and an atmosphere that feels elevated but welcoming.</p></div>
+            <div class="mini-proof"><h3>Why they come back</h3><p>Consistent quality, polished results, and beauty work that looks refined both in person and in photos.</p></div>
+            <div class="mini-proof"><h3>What sets the studio apart</h3><p>A calm luxury aesthetic, detail-led beauty work, and boutique-level care across nails, lashes, and brows.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="policies">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Studio Policies</span>
+          <h2>Clear expectations for a smooth, elevated appointment experience.</h2>
+          <p>Policies help protect your scheduled time, preserve the studio flow, and ensure every client receives the same attentive level of service.</p>
+        </div>
+
+        <div class="policies-grid">
+          <article class="policy-card" data-aos="fade-up"><div class="policy-icon"><i class="bi bi-clock-history"></i></div><h3>Arrival</h3><p>Please arrive on time. Late arrivals may require a shortened service or rescheduling to protect the next client’s appointment.</p></article>
+          <article class="policy-card" data-aos="fade-up" data-aos-delay="60"><div class="policy-icon"><i class="bi bi-calendar-x"></i></div><h3>Cancellations</h3><p>We recommend at least 24 hours notice for cancellations or appointment changes whenever possible.</p></article>
+          <article class="policy-card" data-aos="fade-up" data-aos-delay="120"><div class="policy-icon"><i class="bi bi-person-hearts"></i></div><h3>Guests</h3><p>To maintain a calm and comfortable studio environment, additional guests are discouraged unless arranged in advance.</p></article>
+          <article class="policy-card" data-aos="fade-up" data-aos-delay="180"><div class="policy-icon"><i class="bi bi-brush"></i></div><h3>Design Requests</h3><p>Inspiration photos are welcome. Please send them before your appointment so enough time can be reserved for your desired look.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deposit">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Deposit Instructions</span>
+          <h2>Simple booking guidance, explained clearly.</h2>
+          <p>Deposits help secure your time and allow the studio to prepare for each appointment with care. Update these instructions with your exact payment method when ready.</p>
+        </div>
+
+        <div class="deposit-grid">
+          <div class="deposit-card glass-card" data-aos="fade-right">
+            <span class="eyebrow">How booking works</span>
+            <div class="deposit-steps">
+              <div class="deposit-step"><div class="step-number">1</div><div><h3>Send your request</h3><p>Book through Instagram DM, phone, or the inquiry form with your preferred service, date, and time.</p></div></div>
+              <div class="deposit-step"><div class="step-number">2</div><div><h3>Share inspiration if needed</h3><p>If you want a custom set, attach photos so the studio can confirm timing, pricing, and design complexity.</p></div></div>
+              <div class="deposit-step"><div class="step-number">3</div><div><h3>Submit deposit</h3><p>Once your appointment is confirmed, a non-refundable deposit may be required to secure the booking.</p></div></div>
+              <div class="deposit-step"><div class="step-number">4</div><div><h3>Receive confirmation</h3><p>You’ll receive final confirmation details including appointment time, address, and any prep instructions.</p></div></div>
+            </div>
+          </div>
+
+          <div class="deposit-card glass-card" data-aos="fade-left">
+            <span class="eyebrow">Suggested Deposit Policy</span>
+            <h3>Professional, client-friendly wording you can keep or customize.</h3>
+            <p>A deposit may be required to reserve your appointment and will be applied toward your service total. Deposits are non-refundable and may be forfeited for no-shows, last-minute cancellations, or repeated rescheduling.</p>
+            <p>If you are running late, please notify the studio as soon as possible. Accommodation depends on the schedule for the day.</p>
+            <p>For custom nail art, correction work, or large changes from your booked service, pricing may be adjusted based on time and complexity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-stack" data-aos="fade-right">
+            <div class="about-image-main"><img src="images/about-main.jpg" alt="Beautyfly LA studio interior" /></div>
+            <div class="about-image-small"><img src="images/about-small.jpg" alt="Beautyfly LA nail studio workstation" /></div>
+          </div>
+
+          <div class="about-card glass-card" data-aos="fade-left">
+            <span class="eyebrow">About Beautyfly LA</span>
+            <h2>A beauty studio shaped by precision, softness, and a strong eye for detail.</h2>
+            <p>Beautyfly LA was created for clients who appreciate a clean, polished result and an environment that feels quietly elevated. The studio aesthetic blends olive tones, marble finishes, warm lighting, and refined beauty work to create an experience that feels both modern and intentional.</p>
+            <p>With services spanning Russian manicures, Russian pedicures, lashes, and brows, the focus remains the same: detail-led beauty that feels elegant in person, in photos, and in everyday life.</p>
+            <div class="about-list">
+              <div class="about-list-item"><i class="bi bi-check2-circle"></i><span>Known for refined shaping, clean prep, and glossy finished detail</span></div>
+              <div class="about-list-item"><i class="bi bi-check2-circle"></i><span>Designed as a boutique beauty destination rather than a high-volume salon</span></div>
+              <div class="about-list-item"><i class="bi bi-check2-circle"></i><span>Built for clients who value precision, longevity, and a luxury feel</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Visit the Studio</span>
+          <h2>A location section built to increase confidence, not just show a map.</h2>
+          <p>
+            Beautyfly LA is positioned for Glendale clients and nearby visitors who want a premium beauty destination without the friction of a confusing salon visit.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-card glass-card" data-aos="fade-right">
+            <h3>Beautyfly LA</h3>
+            <p>
+              3909 San Fernando Rd #102<br />
+              Glendale, CA 91204
+            </p>
+
+            <div class="location-trust-strip">
+              <div class="trust-chip">Convenient for Glendale and nearby neighborhoods</div>
+              <div class="trust-chip">Boutique studio feel, not a rushed walk-in atmosphere</div>
+              <div class="trust-chip">Ideal for combining nails, lashes, and brows in one visit</div>
+            </div>
+
+            <div class="location-features">
+              <div class="location-feature"><i class="bi bi-pin-map"></i><span>Easy-to-find Glendale location designed for clients who want a polished, quieter beauty experience.</span></div>
+              <div class="location-feature"><i class="bi bi-car-front"></i><span>Update this section with exact parking guidance so first-time visitors feel more confident before arrival.</span></div>
+              <div class="location-feature"><i class="bi bi-clock"></i><span>Best for scheduled appointments rather than a high-volume drop-in flow, which reinforces the boutique experience.</span></div>
+              <div class="location-feature"><i class="bi bi-camera"></i><span>The studio atmosphere is visually polished, making it ideal for clients who care about both results and environment.</span></div>
+            </div>
+
+            <div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:12px;">
+              <a href="https://maps.google.com/?q=3909+San+Fernando+Rd+102+Glendale+CA" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-map"></i>
+                Open in Maps
+              </a>
+              <a href="tel:+18185551234" class="btn btn-secondary">
+                <i class="bi bi-telephone"></i>
+                Call Studio
+              </a>
+            </div>
+          </div>
+
+          <div class="map-wrap" data-aos="fade-left">
+            <iframe
+              title="Beautyfly LA Location Map"
+              src="https://www.google.com/maps?q=3909%20San%20Fernando%20Rd%20102%20Glendale%20CA&z=15&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-card glass-card" data-aos="fade-right">
+            <span class="eyebrow">FAQ</span>
+            <h2>Helpful answers before your appointment.</h2>
+            <p>These answers are written to create clarity and confidence before booking. Adjust the details anytime to match your exact studio policy.</p>
+          </div>
+
+          <div class="faq-list" data-aos="fade-left">
+            <div class="faq-item active">
+              <button class="faq-question" type="button"><span>How do I book an appointment?</span><i class="bi bi-plus-lg"></i></button>
+              <div class="faq-answer" style="max-height: 220px;"><div class="faq-answer-inner"><p>You can book by Instagram DM, phone, or the inquiry form on this website. If you are requesting custom nails, it helps to include inspiration photos when booking.</p></div></div>
+            </div>
+            <div class="faq-item"><button class="faq-question" type="button"><span>Do you specialize in Russian manicures?</span><i class="bi bi-plus-lg"></i></button><div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Russian manicure work is one of the studio’s signature specialties, known for its detailed prep, clean cuticle finish, and refined polished result.</p></div></div></div>
+            <div class="faq-item"><button class="faq-question" type="button"><span>Can I book nails, lashes, or brows?</span><i class="bi bi-plus-lg"></i></button><div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Beautyfly LA offers nails, lash services, and brow services. Availability may vary by service and artist schedule.</p></div></div></div>
+            <div class="faq-item"><button class="faq-question" type="button"><span>Do you accept inspiration photos?</span><i class="bi bi-plus-lg"></i></button><div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely. Inspiration photos are encouraged, especially for custom design requests. They help confirm timing, feasibility, and pricing in advance.</p></div></div></div>
+            <div class="faq-item"><button class="faq-question" type="button"><span>Is a deposit required?</span><i class="bi bi-plus-lg"></i></button><div class="faq-answer"><div class="faq-answer-inner"><p>A deposit may be required to secure your appointment depending on the service and booking type. You can customize this wording to match your exact policy.</p></div></div></div>
+            <div class="faq-item"><button class="faq-question" type="button"><span>What if I need a removal or correction service?</span><i class="bi bi-plus-lg"></i></button><div class="faq-answer"><div class="faq-answer-inner"><p>Please mention any existing product, outside work, or removal needs at the time of booking so the correct timing and pricing can be reserved for your appointment.</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Contact & Inquiry</span>
+          <h2>Choose the booking method that feels easiest for you.</h2>
+          <p>Whether you prefer to DM, call, or send a website inquiry, Beautyfly LA offers multiple paths to book your next appointment.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card glass-card" data-aos="fade-right">
+            <h3>Booking Options</h3>
+            <p>For the quickest response, Instagram DM is recommended. You can also call or use the inquiry form for appointment requests and questions.</p>
+
+            <div class="contact-methods">
+              <div class="contact-method"><i class="bi bi-instagram"></i><div><strong>Instagram DM</strong><p>@beautyfly_la — best for booking requests, inspiration photos, and quick service questions.</p></div></div>
+              <div class="contact-method"><i class="bi bi-telephone"></i><div><strong>Phone</strong><p>(818) 555-1234 — update with your real business number when ready.</p></div></div>
+              <div class="contact-method"><i class="bi bi-geo-alt"></i><div><strong>Studio Address</strong><p>3909 San Fernando Rd #102, Glendale, CA 91204</p></div></div>
+            </div>
+
+            <div style="margin-top:24px; display:grid; gap:12px;">
+              <a href="https://instagram.com/beautyfly_la" class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i>Book Through Instagram</a>
+              <a href="tel:+18185551234" class="btn btn-secondary btn-block"><i class="bi bi-telephone"></i>Call the Studio</a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card" data-aos="fade-left">
+            <h3>Send an Inquiry</h3>
+            <p>This form is ideal for appointment requests, custom nail questions, group inquiries, or service clarification.</p>
+
+            <form class="inquiry-form" action="#" method="POST">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="tel" name="phone" placeholder="Phone Number" />
+              </div>
+
+              <div class="form-row">
+                <input type="email" name="email" placeholder="Email Address" required />
+                <select name="service" required>
+                  <option value="">Select Service</option>
+                  <option>Russian Manicure</option>
+                  <option>Russian Pedicure</option>
+                  <option>Gel Manicure</option>
+                  <option>Hard Gel Manicure</option>
+                  <option>Classic Lash Set</option>
+                  <option>Hybrid Lash Set</option>
+                  <option>Volume Lash Set</option>
+                  <option>Mega Volume Lash Set</option>
+                  <option>Lash Lift / Lamination</option>
+                  <option>Brow Lamination</option>
+                  <option>Custom Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <input type="text" name="preferred-date" placeholder="Preferred Date" />
+                <input type="text" name="preferred-time" placeholder="Preferred Time" />
+              </div>
+
+              <textarea name="message" placeholder="Tell us about the service you want, your current nails/lashes if relevant, or any custom details you'd like us to know." required></textarea>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="bi bi-send"></i>
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-card">
+            <div class="brand" style="margin-bottom:14px;">
+              <div class="brand-mark" aria-hidden="true"></div>
+              <div class="brand-text"><strong>Beautyfly LA</strong><span>Luxury Nail Studio</span></div>
+            </div>
+            <p>Boutique beauty in Glendale specializing in Russian manicures, Russian pedicures, lashes, and brows.</p>
+          </div>
+
+          <div class="footer-card">
+            <h3>Explore</h3>
+            <div class="footer-links">
+              <a href="#services">Services</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#faq">FAQ</a>
+            </div>
+          </div>
+
+          <div class="footer-card">
+            <h3>Visit</h3>
+            <div class="footer-links">
+              <a href="#location">3909 San Fernando Rd #102</a>
+              <a href="#location">Glendale, CA 91204</a>
+              <a href="tel:+18185551234">(818) 555-1234</a>
+              <a href="https://instagram.com/beautyfly_la" target="_blank" rel="noopener noreferrer">@beautyfly_la</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          <span>© 2026 Beautyfly LA. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <a href="#contact" class="floating-book-btn" aria-label="Book now">
+    <i class="bi bi-calendar2-check"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 850,
+      once: true,
+      offset: 70,
+      easing: "ease-out-cubic"
+    });
+
+    const instagramElement = document.querySelector(".instagram-swiper");
+    if (instagramElement) {
+      new Swiper(".instagram-swiper", {
+        slidesPerView: 1.18,
+        spaceBetween: 14,
+        grabCursor: true,
+        speed: 800,
+        breakpoints: {
+          560: { slidesPerView: 1.5, spaceBetween: 16 },
+          768: { slidesPerView: 2.2, spaceBetween: 18 },
+          1100: { slidesPerView: 3.3, spaceBetween: 20 }
+        }
+      });
+    }
+
+    const testimonialElement = document.querySelector(".testimonials-swiper");
+    if (testimonialElement) {
+      new Swiper(".testimonials-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 700,
+        autoplay: {
+          delay: 4800,
+          disableOnInteraction: false
+        },
+        loop: true
+      });
+    }
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll("a") : [];
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("open");
+        document.body.classList.toggle("menu-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.innerHTML = isOpen ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+      });
+    }
+
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        if (menuToggle) {
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+        }
+      });
+    });
+
+    const comparisonRange = document.getElementById("comparisonRange");
+    const afterImage = document.getElementById("afterImage");
+    if (comparisonRange && afterImage) {
+      const updateComparison = () => {
+        afterImage.style.width = `${comparisonRange.value}%`;
+      };
+      comparisonRange.addEventListener("input", updateComparison);
+      updateComparison();
+    }
+
+    const faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach((item) => {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+      question.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+        faqItems.forEach((otherItem) => {
+          otherItem.classList.remove("active");
+          const otherAnswer = otherItem.querySelector(".faq-answer");
+          if (otherAnswer) otherAnswer.style.maxHeight = null;
+        });
+        if (!isActive) {
+          item.classList.add("active");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+
+    const serviceMenuTrigger = document.getElementById("serviceMenuTrigger");
+    const serviceMenuReveal = document.getElementById("serviceMenuReveal");
+
+    if (serviceMenuTrigger && serviceMenuReveal) {
+      serviceMenuTrigger.addEventListener("click", () => {
+        const isOpen = serviceMenuReveal.classList.toggle("open");
+        serviceMenuTrigger.setAttribute("aria-expanded", String(isOpen));
+        serviceMenuTrigger.innerHTML = isOpen
+          ? '<i class="bi bi-dash-lg"></i> Hide Full Service Menu'
+          : '<i class="bi bi-card-list"></i> View Full Service Menu';
+      });
+    }
+
+    const serviceAccordionItems = document.querySelectorAll(".service-accordion-item");
+    serviceAccordionItems.forEach((item) => {
+      const button = item.querySelector(".service-accordion-button");
+      const content = item.querySelector(".service-accordion-content");
+
+      button.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+
+        serviceAccordionItems.forEach((otherItem) => {
+          otherItem.classList.remove("active");
+          const otherContent = otherItem.querySelector(".service-accordion-content");
+          if (otherContent) otherContent.style.maxHeight = null;
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+
+    const header = document.querySelector(".site-header");
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    const activateNav = () => {
+      let current = "";
+      sections.forEach((section) => {
+        const top = window.scrollY;
+        const offset = section.offsetTop - 140;
+        const height = section.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        const href = link.getAttribute("href").replace("#", "");
+        if (href === current) {
+          link.classList.add("active");
+        }
+      });
+
+      if (header) {
+        header.classList.toggle("scrolled", window.scrollY > 12);
+      }
+    };
+
+    window.addEventListener("scroll", activateNav, { passive: true });
+    activateNav();
+
+    const parallaxElements = document.querySelectorAll("[data-parallax]");
+    const handleParallax = () => {
+      if (window.innerWidth < 1100) {
+        parallaxElements.forEach((el) => { el.style.transform = "none"; });
+        return;
+      }
+      const y = window.scrollY;
+      parallaxElements.forEach((el) => {
+        el.style.transform = `translateY(${y * 0.025}px)`;
+      });
+    };
+
+    window.addEventListener("scroll", handleParallax, { passive: true });
+    window.addEventListener("resize", handleParallax);
+    handleParallax();
+
+    const inquiryForm = document.querySelector(".inquiry-form");
+    if (inquiryForm) {
+      inquiryForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Connect this form to Formspree, your booking CRM, or your email handler before going live.");
+      });
+    }
+  </script>
+</body>
+</html>
